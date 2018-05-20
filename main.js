@@ -113,7 +113,7 @@ var nombre = (params) => {
 	//bloque de codigo
 }
 */
-
+/*
 function nombreCompleto(nombre,apellido){
 	
 	console.log(nombre+" "+apellido);
@@ -133,3 +133,13 @@ if(edad(2017)>=18){
 }else{
 	console.log("eres menor de edad");
 }
+*/
+
+var matriz=new Array(0);
+for (i = 0; i < 2; i++){
+matriz[i]=new Array(3);
+} 
+matriz[0][0] = "valor de la primera columna";
+matriz[0][1] = "valor de la segunda columna";
+alert(matriz[0][1]);
+//console.log(nombre1);
