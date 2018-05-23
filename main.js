@@ -30,7 +30,7 @@ var num= 1;
 var total=0;
 console.log(num);
 console.log(total=num++);//incremento despues de asignar es x++, total es 1
-					
+
 console.log(total=++num);//incremento antes de asignar es ++x, total es 3
 */
 
@@ -67,9 +67,9 @@ console.log(num1 < num2 || num2 <= num1);
 console.log(num1 >= num2 || num1 >= num2);
 */
 /*
-console.log(num1>=num2 ? "verdadero" : "falso"); 
+console.log(num1>=num2 ? "verdadero" : "falso");
 
-console.log(num1<=num2 ? "verdadero" : "falso"); 
+console.log(num1<=num2 ? "verdadero" : "falso");
 
 if(num1>=num2){
 	console.log("verdadero");
@@ -84,9 +84,9 @@ if(num1<=num2){
 */
 /*
 switch(num1){
-	
+
 	case 1:
-		console.log("es 1"); 
+		console.log("es 1");
 		break;
 	case 2:
 		console.log("es 2");
@@ -106,7 +106,7 @@ switch(num1){
 /*
 function nombre(param){
 	//bloque de codigo
-	
+
 }
 // esta funcion no esta soportada por todos los navegadores
 var nombre = (params) => {
@@ -115,9 +115,9 @@ var nombre = (params) => {
 */
 /*
 function edad(anioNac){
-	
+
 	return 2018-anioNac;
-	
+
 }
 
 function validadEdad(num0){
@@ -153,23 +153,23 @@ var x=1;
 	  this.height = height;
 	  this.width = width;
 	}
-	
+
 	get area() {
 	  return this.calcArea();
 	}
-  
+
 	calcArea() {
 	  return this.height * this.width;
 	}
   }
-  
+
   var cuadrado = new Poligono(10, 10);
-  
+
   console.log(cuadrado.area);
   console.log(cuadrado.height);
   console.log(cuadrado.width);
   */
- 
+
 var numJugadores=0;
 var nombre=" ";
 var contador=0;
@@ -208,17 +208,17 @@ while(!terminar){
 		if(jugador[z][1]==seleccion1 && jugador[z][2]!=0){
 			puntos1=prompt("ingrese los puntos del jugador 1");
 			jugador[z][3]=+puntos1;
-			jugador[z][2]--;		
+			jugador[z][2]--;
 		}
 		if(jugador[z][1]==seleccion2 && jugador[z][2]!=0){
 			puntos1=prompt("ingrese los puntos del jugador 2");
 			jugador[z][3]=+puntos1;
 			jugador[z][2]--;
 		}
-		
+
 	}
 
 
-	
+	console.log("hola");;
 
 }
