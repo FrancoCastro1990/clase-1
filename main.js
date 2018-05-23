@@ -198,10 +198,14 @@ do{
 while(!terminar){
 	for (let j = 0; j < numJugadores; j++) {
 			console.log("ID:",jugador[j][1],"Nombre;",jugador[j][0],",P. POR JUGAR:",jugador[j][2],",PUNTOS:",jugador[j][3]);
+      if(jugador[j][2]==0){
+        
+      }
 	}
 	for (let x = 0; x < 2; x++) {
-		seleccion1=seleccion2;
+		seleccion1=seleccion2
 		seleccion2=prompt("ingrese la ID del jugador.");
+
 	}
 
 	for(let z = 0; z < numJugadores; z++){
