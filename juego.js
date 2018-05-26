@@ -42,11 +42,6 @@ while(!terminar){
 			puntos1=prompt("ingrese los puntos del jugador 2");
 			jugador[z][3]=+puntos1;
 			jugador[z][2]--;
-		}
-		
+		}	
 	}
-
-
-	
-
 }

@@ -147,28 +147,8 @@ var x=1;
   }
   document.write('La suma de los valores es '+suma+'<br>');
   */
- /*
- class Poligono {
-	constructor(height, width) {
-	  this.height = height;
-	  this.width = width;
-	}
-	
-	get area() {
-	  return this.calcArea();
-	}
-  
-	calcArea() {
-	  return this.height * this.width;
-	}
-  }
-  
-  var cuadrado = new Poligono(10, 10);
-  
-  console.log(cuadrado.area);
-  console.log(cuadrado.height);
-  console.log(cuadrado.width);
-  */
+
  
 console.log("hola");
+console.log("chao");
 
