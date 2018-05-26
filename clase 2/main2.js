@@ -1,3 +1,9 @@
+/*
+en el index.html colocamos ciertos ID
+en el input colocamos el id=box
+en el <ol></ol> colocamos la id=lista
+en
+*/
 //se llama al input 
 var input = document.getElementById('box');
 //se llama a la lista
@@ -10,17 +16,21 @@ var tareas= [];//new Array();
 //se crea la funcion que agrega tareas a la lista
 function addTarea(tarea) {
     tareas.push(tarea);
+    //window.localStorage.setItem('data',JSON.stringify(tareas));
     //llamamos al renderList();
     renderList();
 }
 
 
 function renderList(params) {
-    //seteamos (la dejamos en blanco '') la lista del html
+    //seteamos (la dejamos en blanco '') la id=lista del html
+    //
+    
     lista.innerHTML = '';
     //recorremos el array
     //forearch toma como parametro una function anonima con 2 parametros.
     //el primer parametro obtiene el valor(item) donde se encuentre el iterador(i)
+    //JSON.parse(window.localStorage.getItem('data')).forEach(function(item,i){
     tareas.forEach(function(item,i){
        // console.log(item);
        // console.log(i);
@@ -29,7 +39,7 @@ function renderList(params) {
         let li = document.createElement('li');
         //le asignamos un valor(lo mimo que hacer <li>"lo que va aca"</li>)
         li.innerHTML=item;
-        //insertamos la etiqueta dentro del DOM (mostramos los datos en pantallas)
+        //insertamos la etiqueta dentro del DOM (mostramos los datos en pantallas en id=lista)
         lista.appendChild(li);
     });
 }
