@@ -12,7 +12,6 @@ console.log(saludar("franco"));
 
 
 console.log("funcion en clase 2");
-*/
 
 
 var valor = "global";
@@ -45,7 +44,4 @@ function add(num) {
 }
 add(10);
 console.log(miArray2);
-
-
-
-
+*/
