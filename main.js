@@ -165,7 +165,8 @@ function funcionLocal() {
 console.log(valor);
 console.log(funcionLocal());
 console.log(valor);
-var prueba2=2;
+console.log("funcion en clase 2");
+
 
 
 
