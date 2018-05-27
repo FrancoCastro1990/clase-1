@@ -4,7 +4,7 @@ en el input colocamos el id=box
 en el <ol></ol> colocamos la id=lista
 en
 */
-//se llama al input 
+//se llama al input
 var input = document.getElementById('box');
 //se llama a la lista
 var lista = document.getElementById('lista');
@@ -25,7 +25,7 @@ function addTarea(tarea) {
 function renderList(params) {
     //seteamos (la dejamos en blanco '') la id=lista del html
     //
-    
+
     lista.innerHTML = '';
     //recorremos el array
     //forearch toma como parametro una function anonima con 2 parametros.
@@ -48,3 +48,5 @@ button.addEventListener('click',function(){
     //llamamos a addTarea y le damos como parametro el input(input.value obtiene el valor ingresado)
     addTarea(input.value);
 })
+
+console.log("hola");
