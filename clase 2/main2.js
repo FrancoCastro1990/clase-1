@@ -48,5 +48,3 @@ button.addEventListener('click',function(){
     //llamamos a addTarea y le damos como parametro el input(input.value obtiene el valor ingresado)
     addTarea(input.value);
 })
-
-console.log("hola");

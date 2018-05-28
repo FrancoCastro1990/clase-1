@@ -45,3 +45,11 @@ function add(num) {
 add(10);
 console.log(miArray2);
 */
+var miarreglo=[["franco",11,3,4],[11,33,55,11]];
+
+miarreglo.forEach(function(value,i) {
+	//console.log(value);
+	console.log(value,i);
+	 console.log(value.indexOf(11));
+	 
+})
