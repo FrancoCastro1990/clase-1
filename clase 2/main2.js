@@ -10,6 +10,11 @@ var input = document.getElementById('box');
 var lista = document.getElementById('lista');
 //se llama al boton
 var button = document.getElementById('add');
+
+var button2 = document.getElementById('borrar');
+
+var input2 = document.getElementById('box2');
+var button3 = document.getElementById('borrarID');
 //se crea eñ array tareas
 var tareas= [];//new Array();
 
@@ -20,7 +25,13 @@ function addTarea(tarea) {
     //llamamos al renderList();
     renderList();
 }
-
+function borrarTarea() {
+  tareas.pop();
+  renderList();
+}
+function borrarIdTarea(num) {
+  tareas.splice(num,1);
+}
 
 function renderList(params) {
     //seteamos (la dejamos en blanco '') la id=lista del html
@@ -47,4 +58,11 @@ function renderList(params) {
 button.addEventListener('click',function(){
     //llamamos a addTarea y le damos como parametro el input(input.value obtiene el valor ingresado)
     addTarea(input.value);
+})
+button2.addEventListener('click',function () {
+    borrarTarea();
+})
+
+button3.addEventListener('click', function () {
+  borrarIdTarea(input2);  
 })
