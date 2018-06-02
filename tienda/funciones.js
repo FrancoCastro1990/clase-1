@@ -1,10 +1,10 @@
-function nuevoProducto(nombre,desc,img,price) {
+function nuevoProducto(nombre, desc, img, price) {
     //creamos un nuevo objeto producto
     var producto = {
-        nombre:nombre,
-        descripcion:desc,
-        imagen:img,
-        precio:price
+        nombre: nombre,
+        descripcion: desc,
+        imagen: img,
+        precio: price
     }
     //enviamos el objeto producto al addProduct que se encarga de guardar el producto
     addProduct(producto);
@@ -16,13 +16,13 @@ function getStorage() {
 
 function setStorage(arr) {
     //seteamos los valores y los guardamos en el local storage
-    window.localStorage.setItem('productos',JSON.stringify(arr));
+    window.localStorage.setItem('productos', JSON.stringify(arr));
 }
 
 
-function addProduct(obj){
+function addProduct(obj) {
     //traemos el array con los datos almacenados en el localStorage
-    var nuevoArrayProductos=getStorage();
+    var nuevoArrayProductos = getStorage();
     //insertamos el nuebo objeto en el array
     nuevoArrayProductos.push(obj);
     //guardamos nuevamente el localStorage
@@ -31,7 +31,7 @@ function addProduct(obj){
 
 function validStorage() {
     //validamos si el localStorage esta vacio(nullo)
-    if (getStorage()==null){
+    if (getStorage() == null) {
         //insertamos un array vacio(literal)
         setStorage([]);
         //devolvemos el localStorage
@@ -42,13 +42,13 @@ function validStorage() {
     }
 }
 
-function renderView(arr){
+function renderView(arr) {
     //llamamos al contenedor producList
     var ul = document.getElementById('productosList');
     //seteamos su HTML en blanco
-    ul.innerHTML='';
+    ul.innerHTML = '';
     //iteramos el array de productos
-    arr.forEach(function(item,index) {
+    arr.forEach(function (item, index) {
 
         //creamos los elementos del html
         var li = document.createElement('li');//li es un elemento dentro de una lista(ul=productosList)
@@ -74,5 +74,5 @@ function renderView(arr){
         li.appendChild(col2);//insertamos la columna 2 al li
         ul.appendChild(li);//insertamos los li en ul(productosList)
 
-    })
+    });
 }
