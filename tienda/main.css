@@ -39,3 +39,22 @@ button{
     color: #fff;
     padding: 20px 40px;
 }
+
+#productosList {
+    padding: 0;
+}
+
+#productosList li{
+    list-style: none;
+    padding: 40px;
+    background: #fff;
+    border: 1 solid #eee;
+    margin-bottom: 10px;
+}
+#productosList li span{
+    display: inline-block;
+}
+#productosList li span img{
+    max-width: 200px;
+    margin-right: 40px;
+}
