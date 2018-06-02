@@ -1,6 +1,6 @@
-/**********************
-*** OBJETOS LITERALES**
-***********************/
+/*********************
+***OBJETOS LITERALES**
+*********************/
 var auto = {
 	color: 'rojo',
 	marca: 'toyota',
@@ -23,11 +23,13 @@ var auto = {
 	},
 
 }
-console.log(auto);
-console.log(auto.marca);
-console.log(auto.encendido);//verificamos el el auto esta encendido
+console.log(auto);//mostramos todos los datos
+console.log(auto.marca);//mostramos uno de sus datos
+auto.marca='nissan';//cambiamos el valor marca
+console.log(auto.marca);//mostramos nuevamente marca para ver el cambio
+console.log(auto.encendido);//verificamos el el auto esta encendido(esta apagado)
 auto.encender(true);//encendimos el auto
-console.log(auto.encendido);
+console.log(auto.encendido);//en consola muestra true
 auto.encender(false);
 console.log(auto.encendido);
 
