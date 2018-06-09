@@ -11,11 +11,13 @@ function nuevoProducto(nombre, desc, img, price) {
 }
 
 function getStorage() {
+    //JSON.parce() construye un objeto a partir de un string 
     return JSON.parse(window.localStorage.getItem('productos'));//traer datos como string
 }
 
 function setStorage(arr) {
     //seteamos los valores y los guardamos en el local storage
+    //JSON.stringify(valor) devuelve una string con los datos del objeto JSON
     window.localStorage.setItem('productos', JSON.stringify(arr));
 }
 
