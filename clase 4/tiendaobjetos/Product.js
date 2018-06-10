@@ -9,7 +9,7 @@ function Product(nombre, desc, img, price) {
 }
 
 Product.prototype.getStorage = function() {
-    return JSON.parce(window.localStorage.getItem('productos'));
+    return JSON.parse(window.localStorage.getItem('productos'));
 }
 
 Product.prototype.setStorage = function (arr) {

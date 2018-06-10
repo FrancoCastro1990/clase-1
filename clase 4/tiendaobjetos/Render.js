@@ -6,7 +6,7 @@ function Render(element){
 }
 
 Render.prototype.getStorage = function() {
-    return JSON.parce(window.localStorage.getItem('productos'));
+    return JSON.parse(window.localStorage.getItem('productos'));
 }
 
 Render.prototype.setStorage = function (arr) {
