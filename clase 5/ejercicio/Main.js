@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // btn.document...
     document.getElementById('add').addEventListener('click', function () {
         add(name.value, desc.value, img.value, price.value);
-        console.log("asdasdasdasd");
+        console.log("agrego el producto correctamente");
     });
 })
