@@ -40,11 +40,11 @@ button{
     padding: 20px 40px;
 }
 
-#productosList {
+#app {
     padding: 0;
 }
 
-#productosList li{
+#app li{
     list-style: none;
     padding: 40px;
     background: #fff;
@@ -52,11 +52,11 @@ button{
     margin-bottom: 10px;
 }
 
-#productosList li span{
+#app li span{
     display: inline-block;
 }
 
-#productosList li span img{
+#app li span img{
     max-width: 200px;
     margin-right: 40px;
 }
