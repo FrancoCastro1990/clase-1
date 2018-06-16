@@ -11,7 +11,8 @@
 </head>
 
 <body>
-	<h1>Mi Tienda</h1>
+
+	<h1>Mi Tienda(con clases)</h1>
 	<nav>
 		<ul>
 			<li>
@@ -22,14 +23,26 @@
 			</li>
 		</ul>
 	</nav>
+	<br>
+	<section>
+		<label for="">Nombre:</label>
+		<input type="text" placeholder="Nombre" id="name">
 
-	<ul id="app"></ul>
+		<label for="">Descripcion:</label>
+		<input type="text" placeholder="Descripcion" id="desc">
+
+		<label for="">Imagen:</label>
+		<input type="text" placeholder="Imagen" id="img">
+
+		<label for="">Precio</label>
+		<input type="number" placeholder="Precio" id="price">
+
+		<button id="add">Agregar nuevo producto</button>
+	</section>
 
 	<script src="Product.js"></script>
 	<script src="Render.js"></script>
-	<script>
-		var rndr = new Render(document.getElementById('app'));
-	</script>
+	<script src="Main.js"></script>
 
 </body>
 
