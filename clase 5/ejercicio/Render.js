@@ -36,7 +36,7 @@ class Render {
                 <span>
                     <img src="${item.imagen}" />
                 </span>
-                <span>
+                <span class="span_interior">
                     <h3>${item.nombre}</h3>
                     <p>${item.descripcion}</p>
                     <strong>$ ${item.precio}<strong>
