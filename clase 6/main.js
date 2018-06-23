@@ -1,3 +1,0 @@
-/*
-node.js y manejo del DOM
-*/
