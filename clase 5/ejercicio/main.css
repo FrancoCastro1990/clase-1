@@ -1,0 +1,74 @@
+body,html{
+    background: #ddfff7;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    /*margin: 10px;*/
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #2f4a92;
+    background: #93e1d8;
+    border-radius: 25px;
+}
+
+nav ul li a:hover{
+    padding: 14px;
+    color: #ddfff7;
+    background: #93e1d8;
+    border-radius: 25px;
+}
+
+h1{
+    color: #242424;
+    text-align: center;
+}
+
+input{
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #555;
+}
+
+button{
+    background: #555;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+#app {
+    padding: 0;
+    
+}
+
+#app li{
+    list-style: none;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border: 2px solid #2f4a92;
+    border-radius: 25px;
+}
+
+#app li span{
+    color: #242424;
+    display: inline-block;
+
+    
+}
+
+#app li span img{
+    max-width: 200px;
+    margin-right: 40px;
+}
+.span_interior{
+    
+}
